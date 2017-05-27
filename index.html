@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Arena</title>
+	</head>
+
+	<body onLoad="Main();" style="text-align:center;">
+		<canvas id="canvasGame" width="800" height="500" style="border:solid 3px gray;"></canvas>
+		<br>
+		<button onClick="SpawnPlayer();">Spawn Player</button>
+		<button onClick="SpawnCPU();">Spawn CPU</button>
+		<button onClick="SpawnSandbag();">Spawn Sandbag</button>
+		<br>
+		<button onClick="Reset();">Reset</button>
+		<button onClick="ZeroDamage();">Zero Damage</button>
+		<input type="checkbox" id="checkBBox" onClick="ToggleBBox();"> Draw Debug
+
+		<div id="divImages" style="display:none;"></div>
+
+		<audio id="sndDamage1"><source src="assets/damage1.wav" type="audio/wav"></audio>
+		<audio id="sndDamage2"><source src="assets/damage2.wav" type="audio/wav"></audio>
+		<audio id="sndLand1"><source src="assets/land1.wav" type="audio/wav"></audio>
+		<audio id="sndLand2"><source src="assets/land2.wav" type="audio/wav"></audio>
+		<audio id="sndJump1"><source src="assets/jump1.wav" type="audio/wav"></audio>
+		<audio id="sndSwing1"><source src="assets/swing1.wav" type="audio/wav"></audio>
+		<audio id="sndSwing2"><source src="assets/swing2.wav" type="audio/wav"></audio>
+		<audio id="sndMarth1"><source src="assets/marth1.wav" type="audio/wav"></audio>
+		<audio id="sndMarth2"><source src="assets/marth2.wav" type="audio/wav"></audio>
+		<audio id="sndMarth3"><source src="assets/marth3.wav" type="audio/wav"></audio>
+		<audio id="sndMarth4"><source src="assets/marth4.wav" type="audio/wav"></audio>
+		<audio id="sndMarth5"><source src="assets/marth5.wav" type="audio/wav"></audio>
+		<audio id="sndMarth6"><source src="assets/marth6.wav" type="audio/wav"></audio>
+	</body>
+
+	<script src="main.js"></script>
+	<script src="animation.js"></script>
+	<script src="objFighterMarth.js"></script>
+	<script src="objFighterSandbag.js"></script>
+	<script src="humanInput.js"></script>
+	<script src="cpuInput.js"></script>
+
+</html>
